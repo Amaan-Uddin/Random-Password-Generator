@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/utility/styles/main.css">
+    <script src="/utility/scripts/app.js" defer></script>
+
+
+</head>
+<body>
+    <main>
+        <section class="container">
+            <ul>
+                <li>
+                    <label for="pass-length">set password length</label>
+                    <input type="range" name="pass-length" id="myRange" min="4" max="16" value="8" class="slider">
+                    <label for="pass-length" id="pass-val"></label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" name="lw-case" value="1">
+                    <label for="lw-case">include lower case (eg: abcdef....)</label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" name="up-case" value="2">
+                    <label for="up-case">include upper case (eg: ABCDEF....)</label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" name="numeric" value="3">
+                    <label for="numeric">include numbers (eg: 012345....)</label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" name="symbols" value="4">
+                    <label for="symbols">include symbols (eg: @#$%&....)</label>
+                </li>
+                
+                <li>
+                    <input type="checkbox" name="no-rep" value="5">
+                    <label for="no-rep">similar characters won't be repeated</label>
+                </li>
+    
+                <!-- <li>
+                    <input type="checkbox" name="save-setting">
+                    <label for="save-setting">save settings</label>
+                </li> -->
+
+                <li>
+                    <input type="button" value="generate password" id="pass-gen-btn">
+                </li>
+
+                <li>
+                    <input type="text" placeholder="Your password" id="password-field">
+                    <input type="button" value="copy" id="cpy-btn">
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
